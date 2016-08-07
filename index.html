@@ -1,1 +1,15 @@
-# futureincolor
+---
+layout: default
+---
+
+<div class="home">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        <div class="gradient"></div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

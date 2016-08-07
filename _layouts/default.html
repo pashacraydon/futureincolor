@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script src="https://use.typekit.net/yqy6cfi.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body class="{% if page.url == '/' %}homepage{% endif %}">
+    <header class="site-header">
+      <div class="info">
+        <p><a href="/" class="name"><strong>futureincolor</strong></a>, curated content on art and design from around the web. </p>
+      </div>
+    </header>
+    <div class="page-content">
+      {{ content }}
+    </div>
+  </body>
+</html>
