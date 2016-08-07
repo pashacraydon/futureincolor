@@ -67,6 +67,7 @@ body.homepage {
   }
 
   .site-header {
+    display: block;
     background-color: transparent;
     .info {
       img {
@@ -214,6 +215,7 @@ code {
   position: relative;
   z-index: 99;
   background-color: #eee;
+  display: none;
 
   .info {
     width: 80%;
